@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Font-family asettaminen*/
+    background-image: url("tracks2.jpg"); /*Taustakuva*/
+}
+
+h1 {
+    text-align: center; /*Otsikko keskitetty*/
+    opacity: 0.6; /*teen kaikesta vähän läpikuultavaa kuvan päälle*/
+}
+
+p {
+    text-align: center; /*Kappaleiden, eli huikean kahden rivin keskittäminen*/
+    opacity: 0.6; 
+}
+
+.search, .table {
+    display: flex; 
+    justify-content: center; /*Käytän näiden elementtien keskittämiseen flexboxia*/
+}
+.list {     /*Linkkilistan keskittämiseen käytän marginia, ettei muotoilu muutu*/
+    width: 50%; /*Elementin leveys keskittämistä varten*/
+    margin: auto; /*Tällä keskitin elementin*/
+}
+
+
+
+#tStations {
+    background-image: url("searchicon1.png"); /*search -toiminnon ikoni*/
+    background-position: 8px 8px; /*näillä saan ikonin mielestäni hyvälle kohdalle*/
+    background-repeat: no-repeat; /*yksi ikoni riittää*/
+    width: 50%; /*Haluan, että searchbar on puolet näytöstä*/
+    font-size: 16px; /*suurennan fonttia vähän*/
+    padding: 12px 20px 12px 40px; /*kokeilemalla tämä on ihan hyvä padding*/
+    margin-bottom: 20px; /*sopiva väli lista -elementtiin alapuolella*/
+    opacity: 0.6;
+     
+}
+
+#stations { /*näillä nollaan listan alkuperäiset asetukset*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#stations li a {
+    border: 1px solid black; /*linkkien reunat mustaksi*/
+    margin-top: -1px; /*tällä estän tuplareunukset linkkilistalle*/
+    background-color: cornsilk; /*värikartta kunniaan*/
+    padding: 10px; 
+    text-decoration: none; /*alleviivaukset pois*/
+    font-size: 16px; /*suurempi fontti*/
+    color: black; /*fontin väri musta*/
+    display: block; /*lista yhtenäisenä palkkina, kaikki linkit saman pituisia*/
+    width: 100%; /*täyttää koko tilan elementistä*/
+    opacity: 0.6;
+}
+
+#stations li a:hover { /*hover -ominaisuus linkeille*/
+    background-color: antiquewhite; 
+}
+
+table {
+    width: 60%; /*taulukon leveys*/
+    margin-top: 20px; /*taulukon ja linkin väli*/
+}
+
+table, th, td { /*taulukon asetukset*/
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: cornsilk;
+}

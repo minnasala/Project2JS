@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trainspotting Assistant</title>
+    <link rel="stylesheet" href="trainstyle.css"/>
+</head>
+<body>
+
+    <!-- Kaikki tuli tämän elementin sisään erillisinä elementteinä.-->
+    <div class="contents">
+        <!-- Elämän eksentrikkojen inspaamana tein vähän erikoisen applikaation,
+            mutta oudot harrastukset kunniaan. Tässä junatietoja niille, 
+            joita junat kiinnostavat.-->
+        
+        <h1>Trainspotting Assistant</h1>
+        <p>Search a station and click the link. </p>
+        <p>See the details of all the trains arriving during 30 minutes.</p>
+
+        <!-- search toiminto tässä elementissä-->
+        <div class="search">
+        
+            <input type="text" id="tStations" onkeyup="stSearch()" placeholder="Search for stations.." title="Type in a name">
+        </div>
+        
+        <!--asemat listassa linkkeinä. Jatkan tämän kanssa seuraavaan projektiin,
+        tarkoitus olisi muodostaa tämä lista apin kautta, mutta hoksasin asemien
+        metadatan niin  myöhään, että en olisi ehtinyt laittaa tätä kokonaan 
+        uusiksi palautukseen mennessä. Minulla on vähän kysymyksiä sinulle siitä,
+        miten on mahdollista hyödyntää kahta eri apia samassa aplikaatiossa. 
+        Kaikilla linkeillä on ID toteutuksen vuoksi, joka kyllä toimii, 
+        mutta ei ole kovin elegantti...-->
+        <div class="list">
+            <ul id="stations">
+                <li><a href="#container" id="avp">Aviapolis</a></li>
+                <li><a href="#container" id="epo">Espoo</a></li>
+                <li><a href="#container" id="hki">Helsinki</a></li>
+                <li><a href="#container" id="hkh">Hiekkaharju</a></li>
+                <li><a href="#container" id="hpl">Huopalahti</a></li>
+                <li><a href="#container" id="ila">Ilmala</a></li>
+                <li><a href="#container" id="jrs">Jorvas</a></li>
+                <li><a href="#container" id="kan">Kannelmäki</a></li>
+                <li><a href="#container" id="klh">Kauklahti</a></li>
+                <li><a href="#container" id="kni">Kauniainen</a></li>
+                <li><a href="#container" id="kea">Kera</a></li>
+                <li><a href="#container" id="ke">Kerava</a></li>
+                <li><a href="#container" id="kil">Kilo</a></li>
+                <li><a href="#container" id="kkn">Kirkkonummi</a></li>
+                <li><a href="#container" id="ktö">Kivistö</a></li>
+                <li><a href="#container" id="kvh">Koivuhovi</a></li>
+                <li><a href="#container" id="kvy">Koivukylä</a></li>
+                <li><a href="#container" id="krs">Korso</a></li>
+                <li><a href="#container" id="käp">Käpylä</a></li>
+                <li><a href="#container" id="lnä">Leinelä</a></li>
+                <li><a href="#container" id="len">Lentoasema</a></li>
+                <li><a href="#container" id="lpv">Leppävaara</a></li>
+                <li><a href="#container" id="loh">Louhela</a></li>
+                <li><a href="#container" id="ml">Malmi</a></li>
+                <li><a href="#container" id="mlo">Malminkartano</a></li>
+                <li><a href="#container" id="mrl">Martinlaakso</a></li>
+                <li><a href="#container" id="mas">Masala</a></li>
+                <li><a href="#container" id="myr">Myyrmäki</a></li>
+                <li><a href="#container" id="mäk">Mäkkylä</a></li>
+                <li><a href="#container" id="olk">Oulunkylä</a></li>
+                <li><a href="#container" id="psl">Pasila</a></li>
+                <li><a href="#container" id="pjm">Pitäjänmäki</a></li>
+                <li><a href="#container" id="poh">Pohjois-Haaga</a></li>
+                <li><a href="#container" id="pla">Puistola</a></li>
+                <li><a href="#container" id="pmk">Pukinmäki</a></li>
+                <li><a href="#container" id="rkl">Rekola</a></li>
+                <li><a href="#container" id="sav">Savio</a></li>
+                <li><a href="#container" id="sti">Siuntio</a></li>
+                <li><a href="#container" id="tna">Tapanila</a></li>
+                <li><a href="#container" id="tkl">Tikkurila</a></li>
+                <li><a href="#container" id="tol">Tolsa</a></li>
+                <li><a href="#container" id="vmo">Valimo</a></li>
+                <li><a href="#container" id="veh">Vehkala</a></li>
+
+
+
+            </ul>
+            </div>
+
+            <!--Tässä elementissä on taulukko, jonka aukeaa linkkiä klikkaamalla.-->
+            <div id="table" class="table"><a name="container"></a>
+    
+        </div>
+    </div>
+<!--Tein tällä kertaa erilliset javaScript ja css -tiedostot 
+ihan harjoittelumielessä. -->
+<script src="schedule.js"></script>
+
+</body>
+</html>
